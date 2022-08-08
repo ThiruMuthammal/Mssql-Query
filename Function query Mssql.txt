@@ -1,0 +1,26 @@
+--> function in mssql
+
+	create procedure test --> whatever name you want to give  
+	as
+	select * from [table_name]
+	go;
+	
+	exec test 
+	
+	
+	create procedure test @para varchar(200) --> whatever name you want to give  
+	as
+	select * from [table_name] where Name = @para
+	go;
+	
+	exec test @para = "Thiru"
+
+
+insert into pass values ('Thiru','hi')
+
+	create procedure test @para varchar(200) --> whatever name you want to give  
+	as
+	select * from [table_name] where Name = @value
+	go;
+	
+	exec test @value = "Thiru"
